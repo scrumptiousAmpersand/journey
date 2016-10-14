@@ -1,5 +1,8 @@
+/* Typefaces */
 $major: 'Cinzel';
 $minor: 'Raleway';
+
+/* Colors */
 $haze: #ECECEC;
 $porcelain: #ECF0F1;
 $darkLynch: #30363D;
@@ -13,12 +16,15 @@ $gossip: #87D37C; // light, pale green
 $jade: #00B16A; // primary green, looks good against darkLynch background
 $cinnabar: #E74C3C; // secondary red
 
+/* Common Variables */
+$border-radius: 4px;
+
 body {
   background-color: $darkLynch;
 }
 
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: $minor, sans-serif;
   font-weight: 200;
   // color: rgba(20, 20, 20, 0.9);
 }
@@ -58,4 +64,23 @@ ul {
 
 .haze-background {
   background-color: $haze !important;
+}
+
+.rotate {
+
+  /* Safari */
+  -webkit-transform: rotate(-90deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-90deg);
+
+  /* IE */
+  -ms-transform: rotate(-90deg);
+
+  /* Opera */
+  -o-transform: rotate(-90deg);
+
+  /* Internet Explorer */
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
 }
