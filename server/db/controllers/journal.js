@@ -1,3 +1,5 @@
+var moment = require('moment');
+
 module.exports = (() => {
   var config = require('../config');
   var models = [
