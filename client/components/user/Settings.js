@@ -94,7 +94,7 @@ export default class Settings extends Component {
     this._initializeSwitches();
     return (
       <div className="col-md-12 journal-content">
-        <h4>Hello, {this.state.firstName}!</h4>
+        <h4>Hello!</h4>
         <div className="individual-setting">
           <p>Do you want text message alerts?</p>
           <input id="text-switch" type="checkbox" name="my-checkbox"/>
